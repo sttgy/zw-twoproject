@@ -1,0 +1,136 @@
+*{margin:0;padding:0}
+a{text-decoration:none}
+b{font-weight:400}
+ul{list-style:none}
+input{outline:0}
+body{font:14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif}
+.top,header{height:40px}
+.top ul .gun,.top ul li{float:left;line-height:40px}
+header{width:100%;background:#333}
+.top{width:1226px;margin:0 auto}
+.top ul li{font-size:12px}
+.top ul li a{color:#b0b0b0}
+.top ul li a:hover{color:#fff}
+.top ul .gun{font-size:12px;color:#424242;margin:0 6px}
+.top .ul2{float:right}
+.gouwuche{width:120px;background:#424242;text-align:center;margin-left:30px;position:relative}
+.gouwuche:hover .gwcBox{display:block}
+.gouwuche .gwcBox{width:316px;position:absolute;right:0;top:40px;box-shadow:2px 2px 5px 3px #78828352;
+z-index:2;background-color:#fff;display:none}
+.gouwuche .gwcBox .gwc_goodsBox{max-height:445px;overflow-y:auto}
+.bottomBox,.bottom_title ul,section .page1{overflow:hidden}
+.gouwuche .gwcBox .gwc_goodsBox li{width:276px;height:60px;margin:0 20px;padding:10px 0;
+border-top:1px solid #e0e0e0}
+.gouwuche .gwcBox .gwc_goodsBox li img{width:60px;height:60px;float:left}
+.gouwuche .gwcBox .gwc_goodsBox li .goodsName{float:left;width:110px;height:40px;line-height:20px;
+margin:10px 0;padding-left:15px;color:#424242;overflow:hidden}
+.gouwuche .gwcBox .gwc_goodsBox li .goodsNum{float:right;height:40px;line-height:40px;margin:10px 0;
+padding-left:15px;color:#424242}
+.gouwuche .gwcBox .gwc_priceBox{width:276px;height:43px;padding:15px 20px;background-color:#fafafa}
+.gouwuche .gwcBox .gwc_priceBox .gwc_priceBox1{width:135px;height:43px;float:left;text-align:left}
+.gouwuche .gwcBox .gwc_priceBox .gwc_priceBox1 .pp{line-height:47px;font-size:12px;color:#757575}
+.gouwuche .gwcBox .gwc_priceBox .gwc_priceBox1 b{color:#ff6700;font-size:12px}
+.gouwuche .gwcBox .gwc_priceBox .gwc_priceBox1 b span{color:#ff6700;font-size:24px}
+.gouwuche .gwcBox .gwc_priceBox .gwc_priceBox2{width:132px;height:43px;background-color:#ff6700;
+color:#fff;font-size:14px;float:right;border:none}
+.nav,nav{height:100px}
+.nav a,.nav ul,.nav ul li{float:left}
+nav{width:100%}
+.nav{width:1226px;margin:0 auto}
+.logo{width:55px;height:55px;background-color:#ff6700;margin-top:28px;
+background-image:url(../img/logo.png);background-position:center}
+.nav ul{height:100px;margin-left:200px}
+.nav ul li{line-height:100px;padding:0 10px}
+.nav ul li a{color:#333}
+.nav ul li a:hover{color:#ff4500}
+.nav .biao{float:right;margin-top:20px;position:relative}
+.nav .biao input{height:50px;float:left}
+.nav .biao input:first-child{width:250px;border:1px solid #e0e0e0}
+.nav .biao input:nth-child(2){width:50px;height:52px;border:1px solid #e0e0e0;background:#fff}
+.nav .biao .biao_aBox{width:250px;position:absolute;right:: 50px;top:0;margin-top:18px}
+.nav .biao .biao_aBox a{background-color:#eee;font-size:12px;color:#b0b0b0;padding:0 5px;
+margin-right:5px;float:right;transition:background-color 1.5s}
+.nav .biao .biao_aBox a:hover{background-color:#ff6700;color:#fff}
+section{width:100%}section .h2box{box-shadow:0 5px 5px rgba(0,0,0,.07);
+border-top:1px solid #e0e0e0}
+section h2{width:1226px;height:63px;color:#333;line-height:63px;font-size:18px;font-weight:100;
+margin:0 auto}
+section h2 .boxh2{float:right;color:#e0e0e0;font-size:14px;line-height:55px}
+section h2 .boxh2 a{color:#616161}
+section h2 .boxh2 a:hover{color:#ff4500}
+section h2 .boxh2 span{margin:0 3px}
+section .page1{width:1226px;margin:32px auto 0}
+section .page1 .tu{width:606px;height:600px;float:left}
+section .page1 .tu img{width:580px;height:599px;margin:83px -26px;}
+section .page1 .goods{width:606px;float:right}
+section .page1 .goods h1{color:#212121;font-size:24px;font-weight:100;height:24px;line-height:24px}
+section .page1 .goods .goodsDesc{padding-top:8px;color:#b0b0b0;font-size:8px}
+section .page1 .goods .ziying{font-size:14px;color:#FF6700;padding-top:15px}
+.price{height:51px;font-size:18px;color:#ff4500;line-height:60px;
+border-bottom:1px solid #e0e0e0;padding-bottom:10px}
+.price span{padding-left:15px;height:51px;font-size:14px;color:#999;text-decoration:line-through}
+.addressBox{width:514px;height:42px;border:1px solid #e0e0e0;padding:30px 40px 30px 50px;
+margin-top:30px;background:url(../img/address.png) 22px 32px no-repeat #fafafa;background-size:18px}
+.addressBox a{padding-left:15px;color:#FF6700}
+.addressBox span:first-child{color:#333}
+.addressBox span{color:#FF6700}
+.price h2{font-size:18px;color:#333}
+.goods .color{width:300px;height:44px;margin:15px 0 0;border:1px solid #e0e0e0;color:#333;
+background:#fff;font-size:16px}
+.goods .colorBox input:nth-child(2){border:1px solid #ff4500;color:#ff4500;margin:15px 0 0}
+.msprice{background:#f9f9fa;padding:30px;margin-bottom:30px;margin-top:30px}
+.msprice li:first-child{list-style:none;line-height:30px;color:#616161;font-size:14px}
+.msprice li:first-child b{font-weight:100;float:right}
+.msprice li:first-child b span{text-decoration:line-through;margin-left:5px}
+.msprice li:last-child{list-style:none;color:#ff6700;font-size:24px;padding-top:20px}
+.buy,.like{height:54px;border:none;font-size:18px;color:#fff}
+.buy{width:300px;background:#ff6700;margin-right:10px}
+.like{width:142px;background:#b0b0b0}
+.page1Bottom{width:606px;height:70px;line-height:70px}
+.page1Bottom h6{padding-top:5px;font-style:normal;font-weight:400;margin-right:15px;line-height:80px;
+color:#b0b0b0;float:left;text-indent:30px;background:url(../img/yes.png) left center no-repeat;
+background-size:22px}
+.delBox{padding-bottom:50px;background:#f5f5f5}
+.delBox h5{font-size:22px;font-weight:400;width:1224px;margin:0 auto;padding:22px 0;color:#333}
+.delImg{background:url(../img/delPrice.jpg) center no-repeat;height:189px}
+.bottomBox{width:100%;padding:40px 0}
+.bottom{width:1226px;margin:0 auto}
+.bottom_title{padding:27px 0;border-bottom:1px solid #e0e0e0}
+.bottom_title li{float:left;width:19.8%;height:25px;line-height:25px;text-align:center;
+border-left:1px solid #e0e0e0}
+.bottom_title li:first-child{border:none}
+.bottom_title li:hover a{color:#ff6709;transition:all .8s}
+.bottom_title li a{color:#616161;font-size:16px}
+.bottom_links{padding:40px 0}
+.bottom_links dl{float:left;width:160px;height:112px;margin:0}
+.bottom_links dl dt{margin:-1px 0 26px;font-size:14px;line-height:1.25;color:#424242}
+.bottom_links dl dd{margin:10px 0 0;font-size:12px}
+.bottom_links dl dd a{color:#757575}
+.bottom_links dl dd a:hover{color:#ff6700}
+.col-contact{float:right;width:251px;height:112px;border-left:1px solid #e0e0e0;
+text-align:center;color:#616161}
+.col-contact .phone{margin:0 0 5px;font-size:22px;line-height:1;color:#ff6700}
+.col-contact a{margin-top:16px;display:inline-block;border:1px solid #ff6700;width:118px;
+height:28px;font-size:12px;line-height:28px;background:#fff;color:#ff6700;transition:.5s all}
+.col-contact a:hover{background-color:#ff6700;color:#fff}
+.info-text p,.info-text p a{color:#b0b0b0}footer{width:100%;padding:30px 0;font-size:12px;
+background:#fafafa}
+.info-links,.info-text{padding-left:67px}
+.footerBox{width:1226px;margin:0 auto;position:relative}
+.footerLogo{width:57px;height:57px;margin-right:10px;
+background:url(../img/logo-footer.png) 50% 50% no-repeat;
+position:absolute;top:0;left:0}
+.info-links{height:28px;margin:4px 0 0}
+.info-links img{width:85px}
+.info-text p{margin:0;line-height:18px}
+.info-text .sites a{color:#757575}
+.slogan{clear:both;margin:30px auto 0;width:267px;height:19px;
+background:url(../img/slogan2016.png) center center no-repeat;padding:30px 0}
+
+
+
+
+
+
+
+

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="description" content="小米帐号能使用小米手机，MIUI，小米云，多看阅读，米聊，小米社区等小米服务。">
+		<meta name="keywords" content="小米帐号，小米账号，小米注册，注册，Mi Account，Sign in，小米，帐号，账号，小米帐户，登录，登陆，安全令牌，动态口令，小米注册，找回密码">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>小米帐号-登录</title>
+		<link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/login.css">
+	</head>
+	<body>
+		<div class="wraper">
+			<divclass="wrap">
+				<div class="wrapOne">
+					<img src="img/logo.png" alt="">
+					<h1>小米商城<span>让每个人都能享受科技的快乐</span></h1>
+				</div>
+				<div class="wrapTwo"></div>
+				<div class="wrapThere">
+					<div class="wrapThere1">
+						<div class="wrapThere1-one">
+							<a href="#" class="zhdl">账号登录</a>
+							|
+							<a href="#" class="smdl">扫码登录</a>
+						</div>
+					</div>
+					<div class="wrapThere2">
+						<div class="wrapThere2-one">
+							<form method="POST" action="index.html">
+								<input id="p-inp" class="p-inp1 username" name="username" type="text" required="required">
+								<input id="p-inp" class="p-inp2" type="text" value="">
+								<input class="p-inp3" type="submit" value="登录">
+							</form style="text-align:center">
+							<div>
+								<a href="#" class="zc zc-one">手机短信登录/注册</a>
+								<a href="#" class="zc zc-two">立即注册</a>
+								|
+								<a href="#" class="zc zc-there">忘记密码？</a>
+							</div>
+							<div class="tubiao">
+								<h>其它方式登录</h>
+								<span class="iconfont icon-zu"></span>
+								<span class="iconfont icon-weibo"></span>
+								<span class="iconfont icon-zhifubao"></span>
+								<span class="iconfont icon-weixin"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="foot1">
+				<ul class="foot-ul">
+					<li class="foot-li">
+						<a href="#">简体</a>
+						|
+						<a href="#">繁体</a>
+						|
+						<a href="#">English</a>
+						|
+						<a href="#">常见问题</a>
+						|
+					</li>
+				</ul>
+			</div>
+			<p class="foot2">
+				<span>
+					小米公司版权所有- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备10046444<a href="#"><img src="img/ghs.png"></a>京ICP证110507号
+				</span>
+			</p>
+		</div>
+		<!-- <div class="foot">
+			<p class="foot2">
+				<span>
+					小米公司版权所有- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备10046444<a href="#"><img src="img/ghs.png"></a>京ICP证110507号
+				</span>
+			</p>
+		</div> -->
+	</body>
+</html>
+<script>
+		let oText2=document.getElementsByClassName("p-inp1")[0];
+		let oBtn=document.getElementsByClassName("p-inp3")[0];
+		oBtn.onclick=function (){
+			let xhr=new XMLHttpRequest();
+			xhr.open("post","login1.php?username="+oText2.value,true);
+			xhr.onreadystatechange=function(){
+				if(xhr.status==200 && xhr.readyState==4){
+					fun(xhr.responseText);
+				}
+			}
+			xhr.send();
+		}
+		function fun(str){
+			if(str==0){
+				location.href="index.html";
+			}else{
+				alert("亲，你还未注册");
+			}
+		}
+</script>
