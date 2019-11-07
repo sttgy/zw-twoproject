@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+		<title>小米帐号 -注册</title>
+		<link rel="shortcut icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="//s01.mifile.cn/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/reset.css">
+	</head>
+	<body>
+		<div class="res">
+			<div class="reset">
+				<div class="reset1">
+					<div class="reset2">
+						<div class="log">
+							<img src="img/logo.png" alt="">
+						</div>
+						<div class="div-h2">
+							<h2>注册小米账号</h2>
+						</div>
+						<div class="formOne">
+							<div class="formTwo">
+								<div class="formThree">
+									<p class="nomal-One">国家/地区</p>
+									<div class="from1">
+										<from>
+											<input type="text" id="from-one">
+											<select id="from-two">
+												<option value ="">中国</option>
+												<option value ="">泰国</option>
+												<option value ="">俄罗斯</option>
+												<option value ="">阿富汗</option>
+												<option value ="">德国</option>
+												<option value ="">英国</option>
+												<option value ="">法国</option>
+												<option value ="">巴西</option>
+												<option value ="">韩国</option>
+												<option value ="">日本</option>
+												<option value ="">阿根廷</option>
+												<option value ="">荷兰</option>
+												<option value ="">美国</option>
+											</select>
+										</from>
+									</div>
+									<p class="reset-p1">成功注册帐号后，国家/地区将不能被修改</p>
+									<p class="reset-p2">手机号码</p>
+									<div class="form1">
+										<from class="yz" method="get" action="">
+											<select id="from-two">
+												<option value ="">+86</option>
+												<option value ="">美国</option>
+												<option value ="">俄罗斯</option>
+												<option value ="">阿富汗</option>
+												<option value ="">德国</option>
+												<option value ="">英国</option>
+												<option value ="">法国</option>
+												<option value ="">巴西</option>
+												<option value ="">韩国</option>
+												<option value ="">日本</option>
+												<option value ="">阿根廷</option>
+												<option value ="">荷兰</option>
+												<option value ="">老挝</option>
+											</select>
+											<input type="text" autofocus="autofocus" required="required" class="username" name="username" id="from-one"><span class="t-span"></span>
+										</from>
+									</div>
+									<a href="#" class="btn">
+										<button class="btn01" value="" style="border:none;width:332;height:42;background-color:#FF6700;">立即注册</button>
+									</a>
+								</div>
+							</div>
+							<div class="msg01">
+								<div class="msg02">
+									已阅读并同意:小米
+									<a href="#">用户协议</a>
+									和
+									<a href="">隐私政策</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="foot">
+			<div class="foot1">
+				<ul class="foot-ul">
+					<li class="foot-li">
+						<a href="#">简体</a>
+						|
+						<a href="#">繁体</a>
+						|
+						<a href="#">English</a>
+						|
+						<a href="#">常见问题</a>
+						|
+					</li>
+				</ul>
+			</div>
+			<p class="foot2">
+				<span>
+					小米公司版权所有- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;京ICP备10046444<a href="#"><img src="img/ghs.png"></a>京ICP证110507号
+				</span>
+			</p>
+		</div>
+	</body>
+</html>
+<script>
+
+		let oText1=document.getElementsByClassName("username")[0];
+		let oBtn=document.getElementsByClassName("btn01")[0];
+		var oForm = document.getElementsByClassName("yz")[0];
+		var oTextName = document.getElementsByClassName("username")[0];
+		var regName = /^1[3587]\d{9}$/;
+		var flagName = false;
+		
+		oTextName.onblur = function(){
+			if(!regName.test(this.value)){
+				flagName = false;
+				var oSpanName = document.getElementsByClassName("t-span")[0];
+				oSpanName.innerHTML = "号码输入有误";
+			}else{
+				flagName = true;
+				return true;
+			}
+		}
+		oBtn.onclick=function (){
+			if(oTextName.onblur()){
+				let xhr=new XMLHttpRequest();
+				xhr.open("get","login.php?username="+oText1.value,true);
+				xhr.onreadystatechange=function(){
+					if(xhr.status==200 && xhr.readyState==4){
+						fun(xhr.responseText);
+					}
+				}
+				xhr.send();
+			}
+
+	    }
+		function fun(str){
+			if(str==0){
+				alert("亲，该手机号已被注册");
+			}else{
+				location.href="login.html";
+			}
+		}
+		
+		
+		
+</script>
